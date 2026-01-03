@@ -1,0 +1,68 @@
+/* App.css */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.app-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.search-box {
+  margin-bottom: 2rem;
+}
+
+input {
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  width: 250px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 12px 25px;
+  margin-left: 10px;
+  border-radius: 25px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #555;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 30px;
+  color: white;
+  width: 350px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.location { font-size: 1.5rem; font-weight: 500; }
+.temp { font-size: 4rem; font-weight: 800; margin: 10px 0; }
+.description { font-size: 1.2rem; text-transform: capitalize; margin-bottom: 20px;}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 20px;
+}
+
+.error-msg { color: #ff4d4d; font-weight: bold; }
